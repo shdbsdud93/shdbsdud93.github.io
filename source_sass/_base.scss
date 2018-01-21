@@ -1,0 +1,227 @@
+@import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+$color_white:#FFFFFF;
+$color_ivory:#e8e2c7;
+$color_grey_base:#848281;
+$color_grey_nav:#849099;
+$color_footer_base:#efefef;
+
+@mixin baseBackground($color)
+{
+  background-color:$color;
+}
+
+@mixin paddingTopBottom($pTop,$pBottom)
+{
+  padding-top:$pTop;
+  padding-bottom:$pBottom;
+}
+
+
+body
+{
+  font-family: "Impact",  serif;
+  @include baseBackground($color_white);
+}
+
+nav
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  top:0;
+  width:100%;
+  @include baseBackground($color_white);
+}
+
+
+li a 
+{
+  display: block;
+  color: #849099;
+  float:left;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+#about_asp,#portfolio_asp ,#interest_asp
+{
+  float:left;
+}
+
+.other_nav
+{
+  float: right;
+}
+li a:hover 
+{
+    background-color: #111;
+}
+
+h1 
+{
+  color: #848281;
+  @include baseBackground($color_ivory);
+}
+
+.head_name
+{
+  padding : 10px;
+  font-size: 2.2rem;
+}
+
+
+h2
+{
+  text-align:center;
+  font-size: 2.2rem;
+  padding : 50px;
+}
+
+.head_details
+{
+  padding: 30px;
+  font-size: 1.0rem;
+}
+
+.img-circle
+{
+  border-radius: 50%;    
+}
+
+.details
+{
+  text-align: center;
+}
+
+
+.flex-container 
+{
+  flex-direction:row;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  flex-flow: row wrap; 
+}
+
+.flex-item 
+{
+  width: 33% ;
+}
+
+.item-section
+{
+  width:60%;
+  margin : 0 auto;
+}
+
+h3
+{
+  font-size:1.0rem;
+}
+
+.fa-university,.fa-rocket,.fa-group
+{
+  @include baseBackground($color_white);
+  padding:15px;
+}
+
+.portfolio-lines
+{
+  padding : 5px;
+  text-align:left;
+}
+
+.video_part
+{
+  width:100%;
+  height : 100%;
+  @include baseBackground($color_grey_base);
+}
+
+.footer
+{
+  @include baseBackground($color_footer_base);
+  height: 170px;
+  @include paddingTopBottom(10px,0px);
+}
+
+
+#portfolio,#about
+{
+  @include paddingTopBottom(50px,50px);
+}
+
+#interest
+{
+  @include paddingTopBottom(50px,0px);
+  height:100%;
+}
+
+.highlight
+{
+  text-decoration: underline;
+  background-color : #111111; 
+  font-size : 120%;
+}
+
+.navBig
+{
+  height:160%;
+  font-size:140%;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-size: 30px;
+}
+
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev 
+{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-img
+{
+  display:none;
+}
+
+.footer_left
+{
+  align:left;
+  @include paddingTopBottom(0px,15px);
+}
+
+.fa-facebook,.fa-instagram
+{
+  padding-left : 20px ;
+  @include paddingTopBottom(10px,0px);
+}
+
+.footer_left_detail
+{
+  padding-left:15px;
+  @include paddingTopBottom(5px,0px);
+}
+
+.footer_right
+{
+  text-align:right;
+}
