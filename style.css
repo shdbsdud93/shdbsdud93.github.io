@@ -2,7 +2,7 @@
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 $color_white:#FFFFFF;
-$color_ivory:#e8e2c7;
+// $color_ivory:#e8e2c7;
 $color_grey_base:#848281;
 $color_grey_nav:#849099;
 $color_footer_base:#efefef;
@@ -63,8 +63,9 @@ li a:hover
 
 h1 
 {
-  color: #848281;
-  @include baseBackground($color_ivory);
+  color: #FFFFFF;
+  // @include baseBackground($color_white);
+  background-color : #FFFFFF;
 }
 
 .head_name
