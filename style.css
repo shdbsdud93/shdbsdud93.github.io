@@ -54,6 +54,11 @@ nav li a
   text-decoration: none;
 }
 
+.portfolio-lines a
+{
+  text-decoration: none;
+}
+
 #about_asp,#portfolio_asp ,#interest_asp
 {
   float:left;
