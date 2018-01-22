@@ -80,6 +80,11 @@ h1
   background-color : #FFFFFF;
 }
 
+.about-head .socialMedia a
+{
+  padding : 8px;
+}
+
 .head_name
 {
   padding : 10px;
