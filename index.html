@@ -31,7 +31,7 @@
             <img src = "yy_itaewon.png"  style="width:800px;height:800px;"">
           </div>
           <div class="carousel-img" href="#two">
-            <img src = "yy_goldenGate.png"  style="width:1000px;height:800px;"">
+            <img src = "yy_tokyo.png"  style="width:800px;height:800px;"">
           </div>
           <div class="carousel-img" href="#three">
             <img src = "yy_brookelynBridge.png"  style="width:800px;height:800px;"">
@@ -39,23 +39,17 @@
           <a class="prev" >&#10094;</a>
           <a class="next" >&#10095;</a>
         </div>
-        <div class ="head_name">
+<!--         <div class ="head_name">
         Yunyoung Roh
-        </div>
-        <div class="head_details">
-        This is website for Yunyoung's portfolio. <br>
-        YEAH !!!!!!
-        </div>
+        </div> -->
       </h1>
     </div>
-
     <div id= "about" class="contents">
-      <h2 class ="about-head">About</h2>
+      <h2 class ="about-head">About<br><br> Yunyoung Roh</h2>
       <div class="details" id="about-details">
-      A senior in Computer Engineering @ University of Illinois at Urbana Champaign <br><br>
-      Hello, this is Yunyoung Roh, a senior engineer studying in University of Illinois at Urbana Champaign.<br>
-      Thank you for visiting my website.<br>
-      This website introduces my projects and stuffs that I am interested in.<br>
+      Hello, I'm Yunyoung Roh, a new graod of University of Illinois @ Urbana Champaign<br>
+      Nice to meet you
+      <br>
 
 
       </div>
@@ -68,12 +62,11 @@
           <h3>PROJECT</h3>
           <i class="fa fa-rocket" style="font-size:100px;"></i>
           <div class = "item-section">
-            <div class="portfolio-lines">IoT Home system with Application</div>
-            <div class="portfolio-lines">Operating System</div>
-            <div class="portfolio-lines">Android Smartphone Mouse</div>
-            <div class="portfolio-lines">2048 Game</div>
-            <div class="portfolio-lines">Toy Car</div>
-            <div class="portfolio-lines">Vending Machine</div>
+            <div class="portfolio-lines"><a href="#SPtoyBoat">Smartphone Controlled Toy Boat</a></div>
+            <div class="portfolio-lines"><a href="#SPmouse">Smartphone Mouse</a></div>
+            <div class="portfolio-lines"><a href="#SPpedometer">Smartphone Pedometer</a></div>
+            <div class="portfolio-lines"><a href="#TaskManagementApp">Task Management Application</a></div>
+            <div class="portfolio-lines"><a href="#Tetris">Teris Game</a></div>
           </div>
         </div>
         <div class="flex-item">
@@ -94,41 +87,82 @@
           <h3>JOB</h3>
           <i class="fa fa-group" style="font-size:100px;"></i>
           <div class = "item-section">
-            <div class = "portfolio-lines">SentBe as Front-End Intern</div>
-            <div class = "portfolio-lines">EP Purification, Inc. as Software Engineer Intern</div>
+            <div class = "portfolio-lines"><a href="#Sentbe">Front End Intern at Sentbe</a></div>
+            <div class = "portfolio-lines"><a href="#EPP">Software Development Intern at Ep Purification Inc</a></div>
           </div>
         </div> 
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <div id ="SPtoyBoat" class="project_each">
+          <h4>Smartphone Controlled Toy Boat</h4>
+          <div class="project_details">
+            o Developed both hardware and software of toy boat that is controlled by smartphone application via Bluetooth communication<br>
+            o Designed PCB board using ATMEGA328p microcontroller and FTDI chip so that user can upload a software using USB port on the board<br>
+            o Built an Android application that control Bluetooth connection and Boat's movement
+          </div>
+        </div>
+        <div id ="SPmouse"  class="project_each">
+          <h4>Smartphone Mouse</h4>
+          <div class="project_details">       
+            o Estimate user's action based on Accelerometer and Gyrometer built in Smartphone<br>
+            o Used Wi-Fi communication so that user's change of position can relocate cursors location on monitor
+          </div>
+        </div>
+        <div id ="SPpedometer"  class="project_each">
+          <h4>Smartphone Pedometer</h4>
+          <div class="project_details">       
+            o Store and Analysis user's movement through Accelerometer and Gyrometer built in Smartphone<br>
+            o Counted User's foot step based on calculation of user's movement
+          </div>
+        </div>
+        <div id ="TaskManagementApp"  class="project_each">
+          <h4>Task Management Application</h4>
+          <div class="project_details">       
+            o A Single Page Task Management Application based on AngularJS<br>
+            o Built connected data base using RESTful API and MongoDB<br>
+            o Allows to add and delete user and task and all changes regard those<br>
+
+          </div>
+        </div>
+        <div id ="Teris"  class="project_each">
+          <h4>FPGA based Tetris Game</h4>
+          <div class="project_details">       
+            o Programmed Tetris game using Altera FPGA<br>
+            o Implemented hardware and software communication to build game   
+          </div>
+        </div>
       </div>
     </div>
 
     <div id= "interest" class="contents">
       <h2 id="interest-head">Interest</h2>
-      <div class="video_part">
+      <div>
+      //travel, fashion , Food , Dog
+
+      </div>
+     <!--  <div class="video_part">
         <video width="100%" height="90%" controls>
           <source src="IMG_1841.m4v" type="video/mp4">
         </video>
-      </div>
+      </div> -->
     </div>
 
     <div class="footer" >
-      <div class="footer_left">
-         <i class="fa fa-instagram" style="font-size:30px;"></i>
-          <div class="footer_left_detail">
-          My Instagram ID is rrrohyy<br>
-          </div>
-          <i class="fa fa-facebook" style="font-size:30px;"></i>
-          <div class="footer_left_detail">
-          My facebook is https://www.facebook.com/yunyoung.roh<br>
-          </div>
-      </div>
       <div class= "footer_right">
-        <div class="footer_right_detail">
-        Thank you for visiting my website
+          <div class="footer_right_detail">
+          Thank you for visiting my website
+          </div>
         </div>
+      <div class="footer_right">
+        <a href="https://www.instagram.com/rrrohyy/"><i class="fa fa-instagram" style="font-size:30px;"></i></a>
+        <a href="https://www.facebook.com/yunyoung.roh"><i class="fa fa-facebook" style="font-size:30px;"></i></a>
+        <a href="https://www.linkedin.com/in/yunyoungroh"><i class="fa fa-linkedin" style="font-size:30px;"></i></a>
+        
       </div>
     </div>
 
-
+    
     <script src="lib/jquery-2.1.3.min/index.js"></script>
     <script src="script.js"></script>
     <!-- <script src="http://localhost:35729/livereload.js"></script> -->

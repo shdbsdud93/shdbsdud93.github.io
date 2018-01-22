@@ -1,12 +1,13 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-$color_white:#FFFFFF;
+/*$color_white:#FFFFFF;
 // $color_ivory:#e8e2c7;
 $color_grey_base:#848281;
 $color_grey_nav:#849099;
 $color_footer_base:#efefef;
-
+$color_black:#000000;*/
+/*
 @mixin baseBackground($color)
 {
   background-color:$color;
@@ -16,13 +17,14 @@ $color_footer_base:#efefef;
 {
   padding-top:$pTop;
   padding-bottom:$pBottom;
-}
+}*/
 
 
 body
 {
   font-family: "Impact",  serif;
-  @include baseBackground($color_white);
+/*  @include baseBackground($color_white);*/
+
 }
 
 nav
@@ -33,11 +35,16 @@ nav
   position:fixed;
   top:0;
   width:100%;
-  @include baseBackground($color_white);
+  background-color: white;
+  margin-bottom: 100px;
+/*  @include baseBackground($color_black);*/
+}
+nav li
+{
+  list-style-type: none;
 }
 
-
-li a 
+nav li a 
 {
   display: block;
   color: #849099;
@@ -63,7 +70,7 @@ li a:hover
 
 h1 
 {
-  color: #FFFFFF;
+  color: #000000;
   // @include baseBackground($color_white);
   background-color : #FFFFFF;
 }
@@ -80,6 +87,13 @@ h2
   text-align:center;
   font-size: 2.2rem;
   padding : 50px;
+}
+
+h4
+{
+  text-align:left;
+  font-size: 1.5rem;
+
 }
 
 .head_details
@@ -167,14 +181,14 @@ h3
 .highlight
 {
   text-decoration: underline;
-  background-color : #111111; 
+  background-color : #FFFFFF; 
   font-size : 120%;
 }
 
 .navBig
 {
   height:160%;
-  font-size:140%;
+  font-size:180%;
 }
 
 .prev, .next 
@@ -184,7 +198,7 @@ h3
   top: 50%;
   width: auto;
   padding: 16px;
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
@@ -210,11 +224,6 @@ h3
   @include paddingTopBottom(0px,15px);
 }
 
-.fa-facebook,.fa-instagram
-{
-  padding-left : 20px ;
-  @include paddingTopBottom(10px,0px);
-}
 
 .footer_left_detail
 {
@@ -225,4 +234,21 @@ h3
 .footer_right
 {
   text-align:right;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.project_details
+{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+.project_each
+{
+  margin : 50px;
+}
+.footer a
+{
+  padding:10px;
 }

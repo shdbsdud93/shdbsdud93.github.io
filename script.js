@@ -1,5 +1,5 @@
-$(function() 
-{
+// $(function() 
+// {
   var navLink = $('ul a');
   var devLink = $('.contents');
   var navArray = [];
@@ -87,7 +87,13 @@ $(function()
   $("nav a").click(function(event){
     event.preventDefault();
     //if the section is clicked in nav, window focus moves to the section
-    $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+    $('html, body').animate({scrollTop: $(this.hash).offset().top-100}, 1000);
+  });
+
+  $("#portfolio a").click(function(event){
+    event.preventDefault();
+    //if the section is clicked in nav, window focus moves to the section
+    $('html, body').animate({scrollTop: $(this.hash).offset().top-100}, 1000);
   });
 
   //carousel part
@@ -134,4 +140,4 @@ $(function()
     
   }
     
-})();
+// })( jQuery );
